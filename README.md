@@ -6,12 +6,12 @@
 
 Audit prompt variables for undeclared, unused, and sensitive placeholders. It solves review drift by turning plain-text plans into deterministic CI-friendly findings.
 
-## Input Contract 39
+## Input Contract
 
 Accepts prompt variable map. The reader supports plain text, JSON, JSONL, and CSV so the
 tool can fit into scripts, CI jobs, and review exports.
 
-## CLI Walkthrough 39
+## CLI Walkthrough
 
 ```bash
 python -m pip install -e ".[dev]"
@@ -20,7 +20,7 @@ prompt-variable-check examples/sample.txt --json --fail-on medium
 python -m prompt_variable_check --help
 ```
 
-## Rule Surface 39
+## Rule Surface
 
 | Rule | Severity | Meaning |
 |---|---:|---|
@@ -28,7 +28,7 @@ python -m prompt_variable_check --help
 | `declared-missing` | medium | variable declaration missing |
 | `unused-variable` | low | unused variable present |
 
-## Validation Notes 39
+## Validation Notes
 
 ```bash
 ruff check .
